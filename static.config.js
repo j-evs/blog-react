@@ -5,11 +5,11 @@ export default {
     title: 'React Static',
   }),
   getRoutes: async () => {
-    const { data: posts } = await axios.get('https://jsonplaceholder.typicode.com/posts')
+    const { data: posts } = await axios.get('https://jsonplaceholder.typicode.com/posts');
     return [
       {
         path: '/',
-        component: 'src/containers/Home',
+        component: 'src/components/Home',
       },
       {
         path: '/about',

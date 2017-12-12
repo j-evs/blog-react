@@ -1,0 +1,34 @@
+.home {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.home__name {
+	margin: 0;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.home__contacts {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	list-style: none;
+}
+
+.home__contact:first-child {
+	margin-right: 20px;
+}
+
+.contact svg {
+	height: 20px;
+	transition: transform .2s ease-in;
+}
+
+.contact:hover svg {
+	transform: scale(1.5);
+}
