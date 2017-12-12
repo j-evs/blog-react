@@ -8,6 +8,7 @@ body {
   box-sizing: border-box;
   width: 100vw;
   min-height: 100vh;
+  background-color: #fbfef9;
 }
 
 a {
@@ -18,6 +19,13 @@ a {
 
 img {
   max-width: 100%;
+}
+
+.content canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
 }
 
 .content {
