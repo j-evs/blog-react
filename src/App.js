@@ -1,18 +1,16 @@
 import React from 'react'
-import { Router, Link } from 'react-static'
+import { Router } from 'react-static'
 //
 import Routes from 'react-static-routes'
+
+import Nav from './components/Nav';
 
 import './app.css'
 
 export default () => (
   <Router>
     <div>
-      <nav>
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/blog">Blog</Link>
-      </nav>
+      <Nav/>
       <div className="content">
         <Routes />
       </div>

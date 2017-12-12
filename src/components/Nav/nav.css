@@ -1,0 +1,27 @@
+.navigation {
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	margin-top: 50px;
+	margin-left: 50px
+}
+
+.navigation__link {
+	display: inline-block;
+	padding-bottom: 5px;
+	border-bottom: 2px solid transparent;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+
+.navigation__link:not(:first-child):hover {
+	border-bottom: 2px solid aqua;
+}
+
+.navigation__link:first-child svg {
+	width: 20px;
+}
+
+.navigation__link:first-child:hover path {
+	fill: aqua;
+}
