@@ -1,7 +1,20 @@
+@font-face {
+  font-family: TitilliumRegular;
+  src: url('./fonts/TitilliumWeb-Regular.ttf');
+}
+
+@font-face {
+  font-family: TitilliumBold;
+  src: url('./fonts/TitilliumWeb-Bold.ttf');
+}
+
+@font-face {
+  font-family: TitilliumSemiBold;
+  src: url('./fonts/TitilliumWeb-SemiBold.ttf');
+}
+
 body {
-  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial,
-  'Lucida Grande', sans-serif;
-  font-weight: 300;
+  font-family: 'TitilliumRegular', sans-serif;
   font-size: 16px;
   margin: 0;
   padding: 0;
@@ -9,12 +22,12 @@ body {
   width: 100vw;
   min-height: 100vh;
   background-color: #fbfef9;
+  color: #000004;
 }
 
 a {
   text-decoration: none;
-  color: #108db8;
-  font-weight: bold;
+  color: #000004;
 }
 
 img {
