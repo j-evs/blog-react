@@ -13,22 +13,22 @@ import Nav from './components/Nav';
 import './app.css'
 
 export default class App extends React.Component {
-  componentDidMount() {
-    particlesJS.load('particles-js', particlejsConfigUri, function() {
-        console.log('callback - particles.js config loaded');
-    });
-  }
+    componentDidMount() {
+        particlesJS.load('particles-js', particlejsConfigUri, function() {
+            console.log('callback - particles.js config loaded');
+        });
+    }
 
-  render() {
-	  return (
-        <Router>
-		  <div  className="app">
-			  <Nav/>
-			  <div className="content" id="particles-js">
-				  <Routes />
-			  </div>
-		  </div>
-        </Router>
-      );
-  }
+    render() {
+        return (
+            <Router>
+                <div  className="app">
+                    <Nav/>
+                    <div className="content" id="particles-js">
+                        <Routes />
+                    </div>
+                </div>
+            </Router>
+        );
+    }
 };
