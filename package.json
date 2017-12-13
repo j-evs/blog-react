@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "axios": "^0.16.2",
+    "contentful": "^5.0.5",
+    "moment": "^2.19.4",
     "particles.js": "^2.0.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
@@ -17,6 +19,7 @@
     "react-static": "^4.5.0"
   },
   "devDependencies": {
+    "dotenv": "^4.0.0",
     "eslint-config-react-tools": "1.x.x",
     "serve": "^6.1.0"
   }

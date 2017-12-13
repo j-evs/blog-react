@@ -1,12 +1,18 @@
-import axios from 'axios';
 import React from 'react';
+
+require('dotenv').config();
+import { getPosts } from "./src/utils/contentManager";
+import { formatPosts } from "./src/utils/contentManager";
+
 
 export default {
     getSiteProps: () => ({
         title: 'React Static',
     }),
     getRoutes: async () => {
-        const { data: posts } = await axios.get('https://jsonplaceholder.typicode.com/posts');
+        const posts = await getPosts();
+        const formattedPosts = formatPosts(posts);
+        console.log('form', formattedPosts);
         return [
             {
                 path: '/',
@@ -20,10 +26,10 @@ export default {
                 path: '/blog',
                 component: 'src/containers/Blog',
                 getProps: () => ({
-                    posts,
+                    posts: formattedPosts,
                 }),
-                children: posts.map(post => ({
-                    path: `/post/${post.id}`,
+                children: formattedPosts.map(post => ({
+                    path: `/post/${post.urlTitle}`,
                     component: 'src/containers/Post',
                     getProps: () => ({
                         post,
