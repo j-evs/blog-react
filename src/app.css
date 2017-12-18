@@ -20,7 +20,6 @@ body {
   padding: 0;
   box-sizing: border-box;
   width: 100vw;
-  min-height: 100vh;
   background-color: #fbfef9;
   color: #000004;
 }
@@ -38,10 +37,11 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 100;
+  z-index: -100;
 }
 
 .content {
   max-width: 750px;
   margin: 0 auto;
+  overflow: hidden;
 }

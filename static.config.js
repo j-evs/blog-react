@@ -12,7 +12,6 @@ export default {
     getRoutes: async () => {
         const posts = await getPosts();
         const formattedPosts = formatPosts(posts);
-        console.log('form', formattedPosts);
         return [
             {
                 path: '/',
@@ -24,13 +23,13 @@ export default {
             },
             {
                 path: '/blog',
-                component: 'src/containers/Blog',
+                component: 'src/components/Blog',
                 getProps: () => ({
                     posts: formattedPosts,
                 }),
                 children: formattedPosts.map(post => ({
                     path: `/post/${post.urlTitle}`,
-                    component: 'src/containers/Post',
+                    component: 'src/components/Post',
                     getProps: () => ({
                         post,
                     }),

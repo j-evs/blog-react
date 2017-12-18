@@ -14,7 +14,8 @@ export async function getPosts() {
     const postCollectionID = 'blogPost';
 
     const {items: posts} = await client.getEntries({
-        'content_type': postCollectionID
+        'content_type': postCollectionID,
+        'order': 'sys.createdAt'
     });
 
     return posts;
