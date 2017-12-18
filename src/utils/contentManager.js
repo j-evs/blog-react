@@ -28,7 +28,23 @@ export function formatPosts(posts) {
             urlTitle: title.replace(/\s+/g,'-').toLowerCase(),
             createdAt: moment(createdAt).format('MMMM Do YYYY'),
             title,
-            text
+            text,
+            pictures: formatPictures(post)
         };
     });
+}
+
+function formatPictures(post) {
+    if (post.fields.pictures) {
+        return post.fields.pictures.map(pic => {
+            const {fields: {title, description, file: {url}}} = pic;
+            return {
+                title,
+                description,
+                url: `https:${url}`
+            };
+        });
+
+    }
+    return null;
 }

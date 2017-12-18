@@ -1,47 +1,47 @@
 @font-face {
-  font-family: TitilliumRegular;
-  src: url('./fonts/TitilliumWeb-Regular.ttf');
+    font-family: TitilliumRegular;
+    src: url('./fonts/TitilliumWeb-Regular.ttf');
 }
 
 @font-face {
-  font-family: TitilliumBold;
-  src: url('./fonts/TitilliumWeb-Bold.ttf');
+    font-family: TitilliumBold;
+    src: url('./fonts/TitilliumWeb-Bold.ttf');
 }
 
 @font-face {
-  font-family: TitilliumSemiBold;
-  src: url('./fonts/TitilliumWeb-SemiBold.ttf');
+    font-family: TitilliumSemiBold;
+    src: url('./fonts/TitilliumWeb-SemiBold.ttf');
 }
 
 body {
-  font-family: 'TitilliumRegular', sans-serif;
-  font-size: 16px;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  width: 100vw;
-  background-color: #fbfef9;
-  color: #000004;
+    font-family: 'TitilliumRegular', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100vw;
+    background-color: #fbfef9;
+    color: #000004;
 }
 
 a {
-  text-decoration: none;
-  color: #000004;
+    text-decoration: none;
+    color: #000004;
 }
 
 img {
-  max-width: 100%;
+    max-width: 100%;
 }
 
 .content canvas {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -100;
 }
 
 .content {
-  max-width: 750px;
-  margin: 0 auto;
-  overflow: hidden;
+    max-width: 750px;
+    margin: 0 auto;
+    overflow: hidden;
 }

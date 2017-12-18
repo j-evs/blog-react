@@ -2,11 +2,15 @@ import React from 'react'
 import { getRouteProps, Link } from 'react-static'
 //
 
+import Pictures from './Pictures';
+
+import './post.css';
+
 export default getRouteProps(({ post }) => (
-    <div>
+    <article className="post">
         <Link to="/blog/">{'<'} Back</Link>
-        <br />
-        <h3>{post.title}</h3>
+        <h1>{post.title}</h1>
         <p>{post.text}</p>
-    </div>
-))
+        {post.pictures && <Pictures pictures={post.pictures} />}
+    </article>
+));
