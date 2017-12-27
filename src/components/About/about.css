@@ -1,3 +1,8 @@
+.about {
+    position: relative;
+    z-index: 1000;
+}
+
 .about__title {
     margin-bottom: 40px;
 }
