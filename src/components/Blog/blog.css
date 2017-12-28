@@ -51,4 +51,14 @@
     transition: all .2s ease-in;
 }
 
+@media (max-width:1000px) {
+    .blog__title {
+        text-align: center;
+    }
+
+    .post-preview__link {
+        text-align: center;
+    }
+}
+
 

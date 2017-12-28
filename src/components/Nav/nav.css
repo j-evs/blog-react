@@ -29,3 +29,28 @@
 .navigation__link:first-child:hover path {
     fill: #2660A4;
 }
+
+@media (max-width:1000px) {
+    .navigation {
+        position: relative;
+        z-index: 1000;
+        max-width: 500px;
+        margin: 0 auto;
+        margin-top: 25px;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    .navigation__link {
+        margin: 0;
+    }
+
+    .navigation__link:first-child {
+        order: 1;
+    }
+
+    .navigation__link:nth-child(2) {
+        order: 2;
+    }
+}

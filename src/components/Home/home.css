@@ -39,3 +39,9 @@
 .contact:hover svg {
     transform: scale(1.25);
 }
+
+@media (max-width:1000px) {
+    .home {
+        height: 70vh;
+    }
+}
