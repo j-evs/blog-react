@@ -7,7 +7,7 @@ import './nav.css';
 
 export default () => (
     <nav className="navigation">
-        <Link className="navigation__link" to="/">
+        <Link className="navigation__link" to="/" aria-label="Home">
             <IconHome/>
         </Link>
         <Link className="navigation__link" to="/about">About</Link>

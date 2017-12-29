@@ -51,9 +51,10 @@ export default {
           <Head>
             <meta charSet="UTF-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <title>Jan Evseev</title>
           </Head>
           <Body>{children}
-          <script defer src='./particles.min.js'></script></Body>
+          <script defer src='/particles.min.js'></script></Body>
         </Html>
       ),
     

@@ -1,20 +1,23 @@
 @font-face {
     font-family: TitilliumRegular;
+    font-display: swap;
     src: url('./fonts/TitilliumWeb-Regular.ttf');
 }
 
 @font-face {
     font-family: TitilliumBold;
+    font-display: swap;
     src: url('./fonts/TitilliumWeb-Bold.ttf');
 }
 
 @font-face {
     font-family: TitilliumSemiBold;
+    font-display: swap;
     src: url('./fonts/TitilliumWeb-SemiBold.ttf');
 }
 
 body {
-    font-family: 'TitilliumRegular', sans-serif;
+    font-family: 'TitilliumRegular', 'Arial', sans-serif;
     font-size: 16px;
     margin: 0;
     padding: 0;

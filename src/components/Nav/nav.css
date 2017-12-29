@@ -8,7 +8,7 @@
 }
 
 .navigation__link {
-    font-family: 'TitilliumBold';
+    font-family: 'TitilliumBold', 'Arial', sans-serif;
     font-size: 18px;
     display: inline-block;
     padding-bottom: 5px;

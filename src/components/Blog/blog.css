@@ -15,7 +15,7 @@
 }
 
 .post-preview {
-    font-family: TitilliumSemiBold, serif;
+    font-family: TitilliumSemiBold, 'Arial', sans-serif;
     font-size: 22px;
     transition: all .2s ease-in;
 }
