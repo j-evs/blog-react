@@ -45,5 +45,16 @@ export default {
         headers: {
             'Access-Control-Allow-Origin': '*'
         }
-    }
+    },
+    Document: ({ Html, Head, Body, children, siteProps, renderMeta }) => (
+        <Html lang="en-US">
+          <Head>
+            <meta charSet="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+          </Head>
+          <Body>{children}
+          <script defer src='./particles.min.js'></script></Body>
+        </Html>
+      ),
+    
 }

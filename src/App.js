@@ -2,9 +2,8 @@ import React from 'react'
 import { Router } from 'react-static'
 
 
-import 'particles.js';
 import particlejsConfig from './particlesjs-config';
-const particlejsConfigUri = "data:text/plain;base64,"+window.btoa(JSON.stringify(particlejsConfig));
+const particlejsConfigUri = "data:text/plain;base64,"+Buffer.from(JSON.stringify(particlejsConfig)).toString('base64');
 //
 import Routes from 'react-static-routes'
 
